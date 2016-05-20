@@ -1,0 +1,26 @@
+dan_kufra
+Dan Kufra
+
+==========
+= Usage: =
+==========
+python3 asteroidsMain.py <amount>
+amount = an integer that sets the amount of asteroids the game starts with
+
+==================
+=  Description:  =
+==================
+This is a version of the classic game "Asteroids". The goal is to control
+the spaceship and destroy the asteroids.
+In addition to the regular assignment option I made the following changes:
+1. An extra argument is given in the command line which allows the user to
+   pick a new starting asteroid amount
+
+
+
+
+=============================
+=  List of submitted files: =
+=============================
+1. README : Readme file that includes information about the program.
+2. asteroidsMain.py : Our main program that includes the game.

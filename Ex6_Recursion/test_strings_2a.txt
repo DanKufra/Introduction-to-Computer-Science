@@ -1,0 +1,14 @@
+" "
+"ab()(abb)"
+")("
+"(((())))"
+"(ab)("
+"(ab))"
+"((ab"
+"abbbb"
+"()()()()()"
+"()abcdef(abd)(((abdcds))((abdd))()(abbd)((((abdse))"
+"(((())))abcd((abcd))()()()((((()))))abcd((abcd))()abcd"
+
+
+

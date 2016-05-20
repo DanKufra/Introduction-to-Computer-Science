@@ -1,0 +1,76 @@
+dan_kufra
+Dan Kufra
+Exercise 10
+
+
+==================
+=  Description:  =
+==================
+This exercise is split into 3 files:
+
+1. WordExtractor.py : This file holds the WordExtractor class which iterates
+over the words of a file one by one.
+
+        Space Complexity: Due to us only reading and saving the content of
+        one line at a time we have a space complexity of O(1). Each line has
+        a set amount of characters it can hold so no matter how many lines
+        the file has we save only a constant amount of characters each time.
+
+
+2. WordTracker.py: This file holds the WordTracker class and our quicksort
+functions. Their purpose is to check whether words were encountered in a
+file from a given unsorted list. I'll go over the time complexity and purpose
+of each function/method one by one.
+        a.  quicksort() and quicksort_helper(): Function that takes an unsorted
+            list of words and uses the quicksort method to sort them
+            alphabetically. The average time complexity for this method is
+            O(nlogn). We learned in class that when calculating the time
+            complexity for quicksort you look at the average rather than the
+            worst case.
+
+        b.  contains(): The function checks if our dictionary was sorted, if it
+            wasn't it sorts it and uses a binary search to find if the word
+            is in our dictionary. The time complexity of this is O(nlogn) to
+            sort the first time, and then every word we search for is just
+            O(logn) using the binary search. It is better this way because
+            you sort the list once, but can use it infinite times afterwards.
+
+        c.  encounter(): This function checks whether a word is in our
+            dictionary. If it is it adds it checks whether it is in our list
+            of found words and adds it if it hasn't been added yet. Returns
+            True if the word was encountered. The time complexity of this
+            function is: O(nlogn) for using our contain function and using
+            "for x in list" which has a time complexity of O(n) and the
+            appending which has a time complexity of O(1).
+            All in all this has a time complexity of O(nlogn) + O(n) the first
+            time we call it, and O(n) for every time we call it after the
+            dictionary is sorted.
+
+		d.  encounter_all(): This function checks whether all the words in
+		    our dictionary have been encountered. Due to my not adding
+		    duplicates in the encounter() method, the time complexity for
+		    this is O(1) since all I do is check the lengths of the lists.
+		    This allows me to use this method more freely in the third mission.
+		    When looking at the code as a whole including our PathScanner
+		    class this makes up for the extra time complexity of adding no
+		    duplicate words in encounter().
+		e.  reset(): This function resets our list of found words to an empty
+		    list. The time complexity is O(1)
+
+
+
+
+=============================
+=  List of submitted files: =
+=============================
+1. README : Readme file that includes information about the program.
+2. WordExtractor.py : Includes a class with an iterator that returns one
+					  word from a text file at a time.
+3. WordTracker.py : Class that sorts a dictionary, searches whether the words
+                    in the dictionary are in a file.
+4. PathScanner.py : class that prints a tree of our path to a file, and
+					checks whether given a path all the words in a dictionary
+					are in any file in the path.
+
+
+

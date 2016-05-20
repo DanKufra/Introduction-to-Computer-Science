@@ -1,0 +1,29 @@
+dan_kufra
+Dan Kufra
+
+==========
+= Usage: =
+==========
+python3 gui.py <image_source> <image_target> <num_frames> <out_dir> <max_x>
+<max_y>
+
+image_source = name of our first image
+image_target = name of our final image
+num_frames = number of frames to be made
+out_dir = our directory where we want the files to be saved
+max_x = size of width of picture
+max_y = size of height of picture
+
+==================
+=  Description:  =
+==================
+A program the uses the gui.py and SolveLinear3.py files combined with the
+ex7.py file to draw triangles on two images, and find the list of matching
+intermediate triangles between those 2 images. And then morphs them into
+each other over the course of a certain amount of frames.
+
+=============================
+=  List of submitted files: =
+=============================
+1. README : Readme file that includes information about the program.
+2. ex7.py : Our main program that morphs the images.

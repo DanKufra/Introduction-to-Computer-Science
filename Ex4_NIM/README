@@ -1,0 +1,16 @@
+dan_kufra
+Dan Kufra
+I discussed this exercise with: Almog Bar-Shalom, Michal Bazir, Nir Leibushor
+
+
+==================
+=  Description:  =
+==================
+This is a program that allows the user to play the "Nim" game in either 
+multiplayer mode or in single player against the computer.
+
+=============================
+=  List of submitted files: =
+=============================
+1. README     
+2. nim.py   

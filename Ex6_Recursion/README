@@ -1,0 +1,42 @@
+dan_kufra
+Dan Kufra
+I discussed this exercise with: Niv Pagir, Almog Bar-Shalom
+
+==========
+= Usage: =
+==========
+python3.4 palindrome.py , balanced_brackets.py , y_tree.py
+
+==================
+=  Description:  =
+==================
+There are 3 different programs:
+1. palindrome.py : includes 2 functions:
+    a. The first function is_palindrome_1
+       (s) gets a string and checks whether it is a palindrome.
+    b. is_palindrome_2(s,i,j) gets a string and 2 indexes and checks whether
+       the indexes in the substring between those 2 indexes is a palindrome.
+
+2. balanced_brackets.py : includes 3 functions:
+   a. is_balanced(s) gets a string and checks whether the parentheses are
+      balanced.
+   b. violated_balance(s) gets a string, checks at what index the balance
+      was violated using our helper function check_index() and tells us what
+      index can fix the balance.
+   c. match_ brackets(s) gets a string and uses the helper function
+      seperate() to find the pairs of parentheses and match them together.
+3. y_tree.py : function that draws a recursive tree when given a length of
+      the first branch.
+
+
+=============================
+=  List of submitted files: =
+=============================
+1. README : Readme file that includes information about the program.
+2. palindrome.py : Includes 3 functions for question 1
+3. balanced_brackets.py : Includes 3 functions and 2 helper function for
+question 2.
+4. y_tree.py : Includes 1 function that draws our tree.
+5. test_string_2a.txt : list of strings used to test question 2a
+6. test_string_2b.txt : list of strings used to test question 2b
+7. test_string_2c.txt : list of strings used to test question 2c
